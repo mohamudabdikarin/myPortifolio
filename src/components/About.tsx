@@ -50,20 +50,7 @@ const About: React.FC = () => {
                 I focus on building websites with React.js and other modern web tools, always paying close attention to design and how users experience things. When I’m not coding, I enjoy checking out new design trends, helping out with open-source projects, or supporting new developers who are just getting started.
 
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="flex items-center text-emerald-600 dark:text-emerald-400">
-                  <Award className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-medium">2+ Years Experience</span>
-                </div>
-                <div className="flex items-center text-blue-600 dark:text-blue-400">
-                  <Zap className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-medium">50+ Projects Completed</span>
-                </div>
-                <div className="flex items-center text-purple-600 dark:text-purple-400">
-                  <Palette className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-medium">Design & Development</span>
-                </div>
-              </div>
+              
             </div>
 
             {/* Resume Download */}
