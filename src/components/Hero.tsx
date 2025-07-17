@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
                   
                   {/* Floating Skills Tags */}
                   <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
-                    <span className="text-xs font-medium text-blue-600 dark:text-blue-400">React Expert</span>
+                    <span className="text-xs font-medium text-blue-600 dark:text-blue-400">Graphic Designer</span>
                   </div>
                   <div className="absolute bottom-4 -left-4 bg-white dark:bg-gray-800 px-3 py-1 rounded-full shadow-lg border border-gray-200 dark:border-gray-700">
                     <span className="text-xs font-medium text-purple-600 dark:text-purple-400">UI/UX Designer</span>
