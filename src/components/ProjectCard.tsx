@@ -29,24 +29,29 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center">
-            <div className="flex space-x-2">
-              <a
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-              >
-                <ExternalLink className="w-4 h-4 text-gray-900" />
-              </a>
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
-              >
-                <Github className="w-4 h-4 text-gray-900" />
-              </a>
-            </div>
+            {/* Show buttons only for web projects */}
+            {project.category === 'web' ? (
+              <div className="flex space-x-2">
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4 text-gray-900" />
+                </a>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
+                >
+                  <Github className="w-4 h-4 text-gray-900" />
+                </a>
+              </div>
+            ) : (
+              <div></div>
+            )}
             {project.featured && (
               <div className="flex items-center space-x-1 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
                 <Star className="w-3 h-3" />
@@ -79,24 +84,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex space-x-4">
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 px-4 rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-center"
-          >
-            Live Demo
-          </a>
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-2 px-4 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 dark:hover:border-blue-400 transition-colors text-center"
-          >
-            Source Code
-          </a>
-        </div>
+        {project.category === 'web' && (
+          <div className="flex space-x-4">
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white py-2 px-4 rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-center"
+            >
+              Live Demo
+            </a>
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-2 px-4 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 dark:hover:border-blue-400 transition-colors text-center"
+            >
+              Source Code
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

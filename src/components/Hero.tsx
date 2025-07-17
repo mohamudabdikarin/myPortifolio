@@ -65,13 +65,10 @@ const Hero: React.FC = () => {
                 <span>View My Work</span>
                 <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="group px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 dark:hover:border-blue-400 hover:shadow-lg transform hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center space-x-2"
-              >
+              <a href="/src/assets/myCv.pdf" download className="group px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-400 dark:hover:border-blue-400 hover:shadow-lg transform hover:-translate-y-1 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center space-x-2">
                 <Download className="w-4 h-4 group-hover:animate-bounce" />
                 <span>Download Resume</span>
-              </button>
+              </a>
             </div>
           </div>
 

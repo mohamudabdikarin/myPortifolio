@@ -4,17 +4,15 @@ import SkillCard from './SkillCard';
 
 const About: React.FC = () => {
   const technicalSkills = [
-    { name: 'React.js', level: 90, color: 'from-blue-500 to-cyan-500' },
-    { name: 'C#', level: 88, color: 'from-purple-500 to-indigo-500' },
-    { name: 'TailwindCSS', level: 90, color: 'from-teal-500 to-blue-500' },
-    { name: 'JavaScript (ES6+)', level: 92, color: 'from-yellow-500 to-orange-500' },
-    { name: 'HTML5', level: 95, color: 'from-orange-500 to-red-500' },
-    { name: 'CSS3', level: 95, color: 'from-blue-500 to-purple-500' },
+    { name: 'Adobe Photoshop', level: 95, color: 'from-blue-600 to-cyan-600' },
+    { name: 'Adobe Illustrator', level: 90, color: 'from-orange-600 to-yellow-600' },
+    { name: 'Figma', level: 88, color: 'from-purple-500 to-pink-500' },
   ];
 
   const toolsSkills = [
-    { name: 'Adobe Photoshop', level: 95, color: 'from-blue-600 to-cyan-600' },
-    { name: 'Adobe Illustrator', level: 90, color: 'from-orange-600 to-yellow-600' },
+    { name: 'React.js', level: 90, color: 'from-blue-500 to-cyan-500' },
+    { name: 'TailwindCSS', level: 90, color: 'from-teal-500 to-blue-500' },
+    { name: 'JavaScript (ES6+)', level: 92, color: 'from-yellow-500 to-orange-500' },
     { name: 'Microsoft Word', level: 98, color: 'from-blue-600 to-blue-700' },
     { name: 'Microsoft Excel', level: 95, color: 'from-green-600 to-green-700' },
     { name: 'Microsoft PowerPoint', level: 100, color: 'from-orange-600 to-red-600' },
@@ -29,7 +27,7 @@ const About: React.FC = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          I’m a developer and designer who loves building digital experiences that actually make a difference.
+            I’m a frontend developer and graphic designer passionate about building beautiful, functional web applications and creating stunning visual designs. I love combining technology and creativity to deliver digital experiences that make a real impact.
           </p>
         </div>
 
@@ -44,11 +42,10 @@ const About: React.FC = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">My Journey</h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              I'm a frontend developer and graphic designer with over 2 years of experience. I love creating websites and visuals that not only look great but are easy for people to use. I got into this field because I’ve always been curious about how design and tech can come together to make life easier and solve real problems.
+                I'm a frontend developer and graphic designer with over 2 years of experience. My passion lies in both building interactive, user-friendly web applications and crafting stunning visual designs. I love creating websites and visuals that not only look great but are easy for people to use. I got into this field because I’ve always been curious about how design and tech can come together to make life easier and solve real problems.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                I focus on building websites with React.js and other modern web tools, always paying close attention to design and how users experience things. When I’m not coding, I enjoy checking out new design trends, helping out with open-source projects, or supporting new developers who are just getting started.
-
+                I focus on building websites with React.js and other modern web tools, always paying close attention to design and how users experience things. I’m equally passionate about graphic design, from branding to digital assets, and enjoy bringing creative ideas to life. When I’m not coding or designing, I enjoy checking out new design trends, helping out with open-source projects, or supporting new developers who are just getting started.
               </p>
               
             </div>
@@ -59,10 +56,10 @@ const About: React.FC = () => {
               <p className="mb-6 opacity-90">
                 Download my resume to learn more about my experience and qualifications.
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2">
+              <a href="/src/assets/myCv.pdf" download className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2">
                 <Download className="w-4 h-4" />
                 <span>Download Resume</span>
-              </button>
+              </a>
             </div>
           </div>
 
